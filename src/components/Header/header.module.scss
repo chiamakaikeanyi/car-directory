@@ -1,0 +1,23 @@
+@import '../../styles/shared.scss';
+
+.header {
+  background-color: var(--color-lightgray);
+  box-shadow: 0 2px 3px -3px var(--color-lightgray);
+  padding: 8px;
+  position: sticky;
+  top: 0;
+  font-weight: 600;
+  z-index: 2;
+
+  @include md {
+    padding: 16px;
+  }
+
+  a {
+    color: var(--color-black);
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,54 @@
+@import '../../styles/shared.scss';
+
+.wrapper {
+  padding: 32px;
+
+  @include md {
+    margin-left: 200px;
+  }
+}
+
+.search {
+  border: 1px solid var(--color-lightgray);
+  border-radius: 5px;
+  padding: 10px;
+
+  &_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.container {
+  width: 100%;
+  overflow: auto;
+}
+
+.table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.item,
+.item_header {
+  border: 1px solid var(--color-lightgray);
+  text-align: left;
+  padding: 8px;
+}
+
+.item_row:nth-child(even) {
+  background-color: var(--color-lightgray);
+}
+
+.select_wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.selected {
+  font-weight: 600;
+  text-transform: lowercase;
+}

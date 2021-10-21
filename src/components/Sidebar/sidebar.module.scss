@@ -1,0 +1,27 @@
+@import '../../styles/shared.scss';
+
+.sidebar {
+  display: none;
+
+  @include md {
+    display: block;
+
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 32px;
+    left: 0;
+    background-color: var(--color-asidegray);
+    overflow-x: hidden;
+    padding: 20px;
+  }
+}
+
+.list {
+  list-style: none;
+
+  &_header {
+    font-weight: 600;
+  }
+}

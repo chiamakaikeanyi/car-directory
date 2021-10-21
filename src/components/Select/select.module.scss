@@ -1,0 +1,7 @@
+@import '../../styles/shared.scss';
+
+.select {
+  @include md {
+    width: 400px;
+  }
+}
