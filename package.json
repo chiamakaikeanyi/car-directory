@@ -18,9 +18,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "stylelint": "stylelint src/components/**/*.scss, stylelint src/pages/**/*.scss",
+    "stylelint": "stylelint src/components/**/*.scss && stylelint src/pages/**/*.scss",
     "test:coverage": "yarn test --coverage",
-    "precommit": "lint-staged"
+    "precommit": "yarn test --detectOpenHandles && lint-staged"
   },
   "eslintConfig": {
     "extends": [
